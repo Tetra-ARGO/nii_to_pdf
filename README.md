@@ -31,8 +31,9 @@ matplotlib
 ```
 python nii_to_pdf.py /path/to/image.nii /path/to/output.pdf
 ```
-I made a pdfs folder in the same directory to make things easier.
+
 # Example
+I made a pdfs folder in the same directory to make things easier.
 ```
 python nii_to_pdf.py ./MPRAGE.nii ./pdfs/name_for_pdf.pdf
 ```
