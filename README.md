@@ -31,10 +31,23 @@ matplotlib
 ```
 python nii_to_pdf.py /path/to/image.nii /path/to/output.pdf
 ```
-I made a pdfs folder in the same file.
+I made a pdfs folder in the same directory to make things easier.
 # Example
 ```
 python nii_to_pdf.py ./MPRAGE.nii ./pdfs/name_for_pdf.pdf
 ```
+## Customizing the Slice Orientation
+The script defaults to the middle axial slice, which is: 
+```
+slide_2d = data[:, :, z]
+```
+You can edit this line in the script (`nii_to_pdf.py`) to change the orientation:
+
+| Orientation | Code           | Description             |
+|-------------|----------------|-------------------------|
+| Axial       | `data[:, :, z]` | Top-down head view (default) |
+| Coronal     | `data[:, y, :]` | Front view              |
+| Sagittal    | `data[x, :, :]` | Side view               |
+
 
 
