@@ -62,10 +62,10 @@ x = 80 # for safittal view
 ```
 ## Troubleshooting
 - **FileNotFoundError**
-  Make sure the output directory exists.
+- Make sure the output directory exists.
 - **Blank or black image**
-  Try a difference slice index - middle slices may be empty in some acquisitions.
+- Try a difference slice index - middle slices may be empty in some acquisitions.
 - **Wrong orientation**
-  Try changing `.T` or flipping axes in the `imshow()` call.
+- Try changing `.T` or flipping axes in the `imshow()` call.
 
 
