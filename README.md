@@ -49,5 +49,23 @@ You can edit this line in the script (`nii_to_pdf.py`) to change the orientation
 | Coronal     | `data[:, y, :]` | Front view              |
 | Sagittal    | `data[x, :, :]` | Side view               |
 
+## Changing Which Slice to Extract
+By default, the script selects the middle slice using:
+```
+z = data.shape[2] // 2
+```
+To select a specific slice instead:
+```
+z = 75 # axial slice index
+y = 100 # for coronal view
+x = 80 # for safittal view
+```
+## Troubleshooting
+- **FileNotFoundError**
+  Make sure the output directory exists.
+- **Blank or black image**
+  Try a difference slice index - middle slices may be empty in some acquisitions.
+- **Wrong orientation**
+  Try changing `.T` or flipping axes in the `imshow()` call.
 
 
