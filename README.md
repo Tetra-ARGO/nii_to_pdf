@@ -67,5 +67,3 @@ x = 80 # for safittal view
   Try a difference slice index - middle slices may be empty in some acquisitions.
 - **Wrong orientation:**
   Try changing `.T` or flipping axes in the `imshow()` call.
-
-
