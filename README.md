@@ -39,7 +39,7 @@ python nii_to_pdf.py ./MPRAGE.nii ./pdfs/name_for_pdf.pdf
 ## Customizing the Slice Orientation
 The script defaults to the middle axial slice, which is: 
 ```
-slide_2d = data[:, :, z]
+slice_2d = data[:, :, z]
 ```
 You can edit this line in the script (`nii_to_pdf.py`) to change the orientation:
 
