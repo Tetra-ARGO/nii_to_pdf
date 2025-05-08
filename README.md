@@ -61,11 +61,11 @@ y = 100 # for coronal view
 x = 80 # for safittal view
 ```
 ## Troubleshooting
-- **FileNotFoundError**
+- **FileNotFoundError:**
   Make sure the output directory exists.
-- **Blank or black image**
+- **Blank or black image:**
   Try a difference slice index - middle slices may be empty in some acquisitions.
-- **Wrong orientation**
+- **Wrong orientation:**
   Try changing `.T` or flipping axes in the `imshow()` call.
 
 
